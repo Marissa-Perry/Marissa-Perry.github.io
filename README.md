@@ -1,2 +1,2 @@
-# Marissa-Perry.github.io
-My Personal Website
+# Marissa Perry - Personal Website
+Repository for my personal website :sun_with_face:
