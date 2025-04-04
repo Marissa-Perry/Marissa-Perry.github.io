@@ -149,29 +149,41 @@
 					</header>
 
 					<p>
-						Following the discovery of an unexpectedly high abundance of bright galaxies at cosmic dawn (z ≳ 10), JWST has prompted a re-evaluation of the theoretical framework for galaxy formation.
-						One promising explanation for these observations is the strong time variability ("burstiness") of star formation in early galaxies, which could significantly amplify their apparent brightness.
-						<span style="font-weight: bold;">The primary goal of this work is to use the Hα-to-UV luminosity ratio to examine the transition from steady to bursty star formation over cosmic time.</span>
-						We analyze 322 galaxies observed with JWST/NIRSpec from the CEERS and RUBIES programs.
+						Over the past few years, James Webb Space Telescope (JWST) observations have challenged our models of galaxy evolution. Studies have found an excessive number of early (z ≳ 10) galaxies at the bright end of the UV luminosity function, which is a measure of the number of galaxies at a given UV luminosity per unit volume of space. Highly stochastic star formation up-scatter galaxies to brighter UV luminosities, potentially explaining this result.
+						<span style="font-weight: bold;">The primary goal of this work is to use the star-forming main sequence (SFMS) and the Hα-to-UV ratio to examine the transition from steady to bursty star formation over cosmic time.</span>
+						We analyze 347 galaxies observed with JWST/NIRSpec from the CEERS and RUBIES programs.
 					</p>
 
 					<!-- Two Figures for Bursty Star Formation -->
 					<section id="burstiness-figures" style="background-color:white; color: black;">
 						<div class="container">
 
-							<!-- Luminosity Ratio Figure -->
-							<div style="text-align: center; margin-bottom: 20px;">
-								<img src="images/lum_ratio.png" alt="Luminosity Ratio Visualization" style="width: 500%; max-width: 500px; height: auto; border: 1px solid #ddd; border-radius: 8px; padding: 10px;" />
-								<p style="margin-top: 5px;">
-									<span style="font-weight: bold;">Figure 3:</span> The Hα-to-UV luminosity ratio vs. SFMS scatter for our galaxy sample. We find a strong correlation between the Hα-to-UV luminosity ratio and SFMS scatter, indicating that star-forming timescales are closely linked to a galaxy's SFR relative to the SFMS average. 
-								</p>
+							<!-- Flexbox Container for Side-by-Side Figures -->
+							<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+							
+							    <!-- Ha-based SFMS Figure -->
+							    <div style="flex: 1; max-width: 48%; text-align: center;">
+							        <img src="images/SFR_Ha.png" alt="Hα-based SFMS" style="width: 100%; max-width: 400px; height: auto; border: 1px solid #ddd; border-radius: 8px; padding: 10px;" />
+							    </div>
+							
+							    <!-- UV-based SFMS Figure -->
+							    <div style="flex: 1; max-width: 48%; text-align: center;">
+							        <img src="images/SFR_UV.png" alt="UV-based SFMS" style="width: 100%; max-width: 400px; height: auto; border: 1px solid #ddd; border-radius: 8px; padding: 10px;" />
+							    </div>
+							
 							</div>
+							
+							<!-- Single Caption Below Both Figures -->
+							<p style="text-align: center; margin-top: 10px;">
+							    <span style="font-weight: bold;">Figure 3:</span> Hα- (left) and UV-based (right) SFRs vs. stellar masses for our galaxy sample binned by redshift. The shaded regions denote the 1-sigma intrinsic scatter intervals about the SFMS. The black dashed and dashed-dotted curves represent literature values from Popesso+2023 and Speagle+2014, respectively.
+							</p>
 
-							<!-- Correlation Visualization Figure -->
+
+							<!-- Fraction Figure -->
 							<div style="text-align: center;">
-								<img src="images/correlation_visualization1.png" alt="Correlation Visualization" style="width: 600%; max-width: 600px; height: auto; border: 1px solid #ddd; border-radius: 8px; padding: 10px;" />
+								<img src="images/Ha_UV_fraction.png" alt="Ha-to-UV Ratio" style="width: 600%; max-width: 600px; height: auto; border: 1px solid #ddd; border-radius: 8px; padding: 10px;" />
 								<p style="margin-top: 5px;">
-									<span style="font-weight: bold;">Figure 4:</span> Spearman’s correlation coefficient vs. minimum stellar mass (left) and maximum stellar mass (right) used to compute it. We find that low-mass galaxies in our sample exhibit a stronger correlation, suggesting more bursty star formation histories
+									<span style="font-weight: bold;">Figure 4:</span> The fraction of galaxies whose Hα-to-UV ratios are consistent (bottom panel) and inconsistent (top panels) with a constant SFH computed by Mehta+2023 as a function of redshift. These results suggest that higher-mass galaxies evolve from steady to inactive star-formation over cosmic time, and lower-mass galaxies generally experience bursty star-formation, especially at early times.
 								</p>
 							</div>
 
